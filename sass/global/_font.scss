@@ -1,0 +1,18 @@
+@use "sass:math";
+// 文字フォントの種類
+$base-font: "Archivo Narrow", YuGothic, "Yu Gothic", "游ゴシック", sans-serif;
+// 文字の太さ
+$regular: 300;
+$normal: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+// 文字の大きさ
+$xs: 12px;
+$sm: 14px;
+$base: 16px;
+$lg: 18px;
+$xl: 20px;
+$xxl: 24px;
+$xxxl: 32px;

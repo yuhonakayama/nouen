@@ -1,0 +1,142 @@
+@use "../base/base";
+@use "../base/reset";
+@use "../global" as *;
+
+// お問い合わせ
+.contact {
+  width: 100%;
+  margin-top: 160px;
+
+  @include mq("md") {
+    margin-top: 82px;
+  }
+}
+
+.contact__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $orange;
+  padding: 45px 0 50px;
+  border-radius: 50px;
+  max-width: 960px;
+
+  @include mq("md") {
+    padding: 44px 20px 27px;
+  }
+}
+
+.contact__title {
+  font-size: 40px;
+  font-weight: $bold;
+  line-height: calc(53/40);
+  color: $white;
+
+  @include mq("md") {
+    font-size: 30px;
+    line-height: calc(40/30);
+  }
+}
+
+.contact__text {
+  margin-top: 30px;
+  font-size: $lg;
+  font-weight: $medium;
+  line-height: calc(27/18);
+  color: $white;
+  text-align: center;
+
+  @include mq("md") {
+    margin-top: 12px;
+    font-size: $lg;
+    line-height: calc(27/18);
+  }
+}
+
+.contact__button.button.button--outline {
+  margin-top: 36px;
+  padding: 20px 82px;
+
+  @include mq("md") {
+    margin-top: 14px;
+  }
+}
+
+.contact__button-link.button__link {
+  font-weight: $bold;
+}
+
+.contact__info {
+  margin-top: 40px;
+
+  @include mq("md") {
+    margin-top: 18px;
+  }
+}
+
+.contact__info-text {
+  font-family: "Yu Gothic", sans-serif;
+  font-size: $xl;
+  font-weight: $bold;
+  line-height: calc(27/20);
+  color: $white;
+
+  @include mq("md") {
+    font-size: 20px;
+    line-height: calc(27/20);
+    text-align: center;
+  }
+}
+
+.contact__info-text:not(:first-child) {
+  @include mq("md") {
+    margin-top: 10px;
+    line-height: calc(33/20);
+  }
+}
+
+.contact__info-text--tel {
+  font-family: "Yu Gothic", sans-serif;
+  font-size: 30px;
+  line-height: calc(40/30);
+}
+
+// -----------------------------
+// 共通パーツ
+// -----------------------------
+
+// ボタン
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.button--outline {
+  padding: 20px 90px;
+  background-color: $white;
+  border: 2px solid $green;
+  border-radius: 50px;
+}
+
+.button__link {
+  font-size: $xl;
+  font-weight: $regular;
+  letter-spacing: 2px;
+  line-height: calc(27/20);
+  color: $green;
+}
+
+// インナー
+.inner {
+  width: 100%;
+  max-width: 1010px;
+  padding: 0 25px;
+  margin: 0 auto;
+
+  @include mq("md") {
+    padding: 0 15px;
+  }
+}
