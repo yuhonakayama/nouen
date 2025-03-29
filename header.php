@@ -45,7 +45,7 @@
         <?php $html_tag = (is_home() || is_front_page()) ? 'h1' : 'div'; ?>
         <<?php echo $html_tag; ?> class="header__name">
           <a href="<?php echo esc_url(home_url()); ?>">
-            <img src="<?php echo esc_url(get_theme_file_uri('img/logo.svg')); ?>" alt="自然の恵み農園">
+            <img src="<?php echo esc_url(get_theme_file_uri('/images/logo.svg')); ?>" alt="自然の恵み農園">
           </a>
         </<?php echo $html_tag; ?>>
         <nav class="header__nav lg-none">
